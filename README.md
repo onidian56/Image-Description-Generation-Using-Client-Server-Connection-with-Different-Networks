@@ -38,9 +38,6 @@ graph TD
         F -->|7. Generate Description| E
         E -->|8. Send Description via SMTP| D
     end
-    
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style F fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
 ## System Workflow
@@ -88,10 +85,6 @@ flowchart LR
     D --> E[Classification]
     E --> F[Result Processing]
     F --> G[Generate Description]
-    
-    style A fill:#f9f,stroke:#333,stroke-width:1px
-    style C fill:#bbf,stroke:#333,stroke-width:1px
-    style G fill:#bfb,stroke:#333,stroke-width:1px
 ```
 
 ## Components
@@ -145,10 +138,6 @@ graph TD
     subgraph Response
         A4 -->|Display| A5[Classification Results]
     end
-    
-    style A1 fill:#f9f,stroke:#333,stroke-width:1px
-    style C3 fill:#bbf,stroke:#333,stroke-width:1px
-    style A5 fill:#bfb,stroke:#333,stroke-width:1px
 ```
 
 ## How It Works
@@ -309,9 +298,6 @@ graph TD
     B --> J[Deep Learning Model]
     E --> K[Email Communication]
     end
-    
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style J fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
 ## Future Work
