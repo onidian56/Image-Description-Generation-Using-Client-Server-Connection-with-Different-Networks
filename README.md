@@ -1,7 +1,16 @@
 # Image Description Generation Using Client-Server Connection with Different Networks
 
 ## Project Overview
-This project implements a distributed system for animal image classification across different networks using standard email protocols (SMTP and POP3) for communication. The system consists of a client that captures images and sends them to a server, which then processes the images using a pre-trained deep learning model to classify animals and generate detailed descriptions. The classification results are sent back to the client, creating a complete automated pipeline.
+This project implements a distributed animal image classification system that enables communication between devices across different networks using standard email protocols (**SMTP and POP3**) as a transport layer. 
+
+The system is designed using a client-server architecture:
+- The **client module**, developed and implemented by me, captures images and sends them to the server via email.
+- The **server module**, also authored by me, receives the image from email, processes it using a deep learning model, and sends back classification results via email.
+
+The classification model, integrated by team members, analyzes the image to identify the animal and generate a detailed description. This creates a fully automated and asynchronous pipeline, with no need for direct IP communication — making it suitable for isolated or firewalled environments.
+
+My core focus in this project was designing and implementing the **email-based communication infrastructure** (`client.py` and `server.py`) that powers the cross-network exchange.
+
 
 ## Table of Contents
 - [Architecture](#architecture)
